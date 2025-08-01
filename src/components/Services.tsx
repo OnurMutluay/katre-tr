@@ -1,6 +1,5 @@
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { MagnifierIcon, WalletIcon, ChartIcon } from "./Icons";
-import cubeLeg from "../assets/cube-leg.png";
 
 interface ServiceProps {
   title: string;
@@ -62,7 +61,7 @@ export const Services = () => {
           </p>
 
           <div className="flex flex-col gap-8">
-            {serviceList.map(({ icon, title, description }: ServiceProps) => (
+            {serviceList.map(({ title, description }: ServiceProps) => (
               <Card key={title}>
                 <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
                   <div>
