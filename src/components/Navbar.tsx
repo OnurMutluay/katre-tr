@@ -15,6 +15,7 @@ import {
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
+import { LogoIcon } from "./Icons";
 
 interface RouteProps {
   href: string;
@@ -37,6 +38,10 @@ const routeList: RouteProps[] = [
   {
     href: "#faq",
     label: "Sık Sorulanlar",
+  },
+  {
+    href: "https://katreconsultancy.com",
+    label: "🇬🇧 EN",
   },
 ];
 
@@ -73,7 +78,7 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Katre Consultancy
+                    Shadcn/React
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
